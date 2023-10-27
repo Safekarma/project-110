@@ -18,9 +18,9 @@ span
     color:black;
 }
 .emotion-name
-[
+{
     font-size: 40px;
-]
+}
 .emoji
 {
     font-size:48px;
@@ -30,4 +30,8 @@ span
     font-size:18px;
     border-radius:10px;
     letter-spacing:10px;
+}
+#b
+{
+    background-color: gold;
 }
