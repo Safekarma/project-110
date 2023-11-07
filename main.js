@@ -47,35 +47,35 @@ function gotResult(error, results)
         console.error(error);
     } else{
         console.log(results);
-        document.getElementById("result_sign_name").innerHTML = results[0].label;
-        document.getElementById("result_sign_name2").innerHTML = results[1].label;
+        document.getElementById("result_emotion_name").innerHTML = results[0].label;
+        document.getElementById("result_emotion_name2").innerHTML = results[1].label;
         prediction_1 = results[0].label;
         prediction_2 = results[1].label;
         speak();
         if(results[0].label == "thumbs up" )
         {
-            document.getElementById("update_hand_sign").innerHTML = "&#128077;";
+            document.getElementById("update_emoji").innerHTML = "&#128077;";
         }
         if(results[0].label == "thumbs down" )
         {
-            document.getElementById("update_hand_sign").innerHTML = "&#128078;";
+            document.getElementById("update_emoji").innerHTML = "&#128078;";
         }
         if(results[0].label == "point up" )
         {
-            document.getElementById("update_hand_sign").innerHTML = "&#9757;";
+            document.getElementById("update_emoji").innerHTML = "&#9757;";
         }
 
         if(results[1].label == "thumbs up" )
         {
-            document.getElementById("update_hand_sign2").innerHTML = "&#128077;";
+            document.getElementById("update_emoji2").innerHTML = "&#128077;";
         }
         if(results[1].label == "thumbs down" )
         {
-            document.getElementById("update_hand_sign2").innerHTML = "&#128078;";
+            document.getElementById("update_emoji2").innerHTML = "&#128078;";
         }
         if(results[1].label == "point up" )
         {
-            document.getElementById("update_hand_sign2").innerHTML = "&#9757;";
+            document.getElementById("update_emoji2").innerHTML = "&#9757;";
         }
     }
 }
